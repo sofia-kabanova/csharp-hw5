@@ -5,22 +5,22 @@
 // [-4, -6, 89, 6] -> 0
 void FillArrayRandomNumbers(int[] numbers)
 {
-    for(int i = 0; i < numbers.Length; i++)
-        {
-            numbers[i] = new Random().Next(1,10);
-        }
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        numbers[i] = new Random().Next(1, 10);
+    }
 }
 void PrintArray(int[] numbers)
 {
     Console.Write("[ ");
-    for(int i = 0; i < numbers.Length; i++)
-        {
-            Console.Write(numbers[i] + " ");
-        }
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        Console.Write(numbers[i] + " ");
+    }
     Console.Write("]");
     Console.WriteLine();
 }
-Console.WriteLine("Введите размер массива");
+Console.Write("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
 FillArrayRandomNumbers(numbers);
@@ -29,4 +29,4 @@ PrintArray(numbers);
 int sum = 0;
 for (int m = 0; m < numbers.Length; m += 2)
     sum = sum + numbers[m];
-    Console.WriteLine($"всего {numbers.Length} чисел, сумма элементов на нечётных позициях = {sum}");
+Console.WriteLine($"всего {numbers.Length} чисел, сумма элементов на нечётных позициях = {sum}");
