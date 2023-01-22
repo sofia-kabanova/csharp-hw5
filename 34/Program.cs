@@ -11,7 +11,6 @@ FillArrayRandomNumbers(numbers);
 Console.WriteLine("В массиве: ");
 PrintArray(numbers);
 int count = 0;
-
 for (int m = 0; m < numbers.Length; m++)
     if (numbers[m] % 2 == 0)
         count++;
