@@ -37,7 +37,6 @@ for (int m = 0; m < numbers.Length; m++)
         min = numbers[m];
     }
 }
-
 Console.WriteLine($"всего {numbers.Length} чисел.");
 Console.WriteLine($"Максимальное значение = {max}, минимальное значение = {min}");
 Console.WriteLine($"Разница между максимальным и минимальным значением = {max - min}");
